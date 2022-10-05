@@ -1,0 +1,22 @@
+{
+  "name": "tdd-stockapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jkozmo10/307-TDD-stockapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jkozmo10/307-TDD-stockapp/issues"
+  },
+  "homepage": "https://github.com/Jkozmo10/307-TDD-stockapp#readme",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
