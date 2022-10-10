@@ -1,6 +1,6 @@
 class Stock_Portfolio{
-    constructor(stocks){
-        this.stocks = stocks;
+    constructor(){
+        this.stocks = {};
     }
 
     purchase(stock){
@@ -28,7 +28,29 @@ class Stock_Portfolio{
     }
 
     shareCount(ticker){
-        return this.stocks[ticker];
+        if(ticker in this.stocks){
+            return this.stocks[ticker];
+        }
+        else{
+            return 0;
+        }
+    }
+
+    isEmpty(){
+        if (JSON.stringify({}) == JSON.stringify(this.stocks)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    uniqueTickers(){
+        this.result = 0;
+        for (let k in portfolio.stocks){
+            this.result++;
+           }
+        return this.result;
     }
 }
 
